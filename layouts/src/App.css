@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.store {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  color: #23211f;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.shop-card {
+  width: 350px;
+  -webkit-box-shadow: 0px 9px 19px 8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 9px 19px 8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 9px 19px 8px rgba(34, 60, 80, 0.2);
+  margin-bottom: 40px;
+  background: #f5f5f6;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.shop-card img {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+button#addToCart {
+color: #d33f34;
+  border: solid 1px #d33f34;
+  border-radius: 10px;
+}
+
+.in-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-card.in-list img {
+  max-height: 200px;
+}
+
+.material-icons {
+  font-size: 50px;
+  color: red;
+}
+
+.icon {
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  justify-content: flex-end;
+  cursor: pointer;
+}
