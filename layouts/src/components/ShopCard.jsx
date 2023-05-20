@@ -1,6 +1,6 @@
 export default function ShopCard (product) {
     return (
-        <div className="shop-card">
+        <div className="shop-card" >
             <h1>{product.product.name}</h1>
             <div className="color-block">{product.product.color}</div>
             <img src={product.product.img} />
