@@ -6,9 +6,6 @@ import ListView from "./ListView";
 
 export default function Store (){
 
-    let dataJson
-    let productsArr = []
-
     const [cards, setView] = useState([])
     const [viewType, setViewType] = useState("view_module")
 
@@ -16,10 +13,7 @@ export default function Store (){
         fetch('/src/products.json')
             .then (response => response.json())
             .then((json) => {
-                dataJson = json
-
-                dataJson.map(item => productsArr.push(item))
-                setView(productsArr)
+                setView(json)
             })
     }
 
